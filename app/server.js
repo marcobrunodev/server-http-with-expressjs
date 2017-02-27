@@ -22,6 +22,10 @@ app.get('/contato', (req, res) => {
   `)
 })
 
+app.post('/contato', (req, res) => {
+  res.send('<h1>Precisamos aprender a pegar os valor que usuário digitou!</h1>')
+})
+
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`)
   console.log('Para derrubar o servidor: ctrl + c');
